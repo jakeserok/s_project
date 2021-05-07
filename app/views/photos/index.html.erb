@@ -6,7 +6,9 @@
   </div>
   <br/>
   <div class="center-img">
-    <%= image_tag p.image, class: "center_img index" %>  
+    <%= link_to photo_path(p) do %>
+      <%= image_tag p.image, class: "center_img index" %>  
+    <% end %>
   </div>
   <br/>
   <hr/>
