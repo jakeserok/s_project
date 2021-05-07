@@ -3,3 +3,5 @@
 </div>
 
 <%= image_tag @photo.image, class: "center_img index" %>
+
+<%= link_to "Delete Photo", photo_path(@photo), class: "button_to", method: :delete %>
