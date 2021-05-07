@@ -1,0 +1,15 @@
+<h1>Photos</h1>
+
+<% @photos.each do |p| %>
+  <div class="center">
+    <strong><%= p.title %></strong>
+  </div>
+  <br/>
+  <div class="center-img">
+    <%= image_tag p.image, class: "center_img index" %>  
+  </div>
+  <br/>
+  <hr/>
+<% end %>
+
+<%= link_to "Add Photos", new_photo_path %>

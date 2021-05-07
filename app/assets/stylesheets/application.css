@@ -4,3 +4,19 @@
  *= require_self
  *= require "bootstrap"
  */
+
+ .center_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+ }
+
+ .center {
+   text-align: center;
+ }
+ 
+ .index {
+   width: 50%;
+   height: auto;
+ }
