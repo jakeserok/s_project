@@ -1,6 +1,7 @@
 <h1>Photos</h1>
-
-<%= link_to "Add Photos", new_photo_path %>
+<% if user_signed_in? %>
+  <%= link_to "Add Photos", new_photo_path %>
+<% end %>
 
 <% @photos.each do |p| %>
   <div class="center">
