@@ -11,10 +11,13 @@
   </head>
 
   <body>
+    <%= render 'home/nav'%>
+
     <div class="container">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-      <%= render 'home/nav'%>
+      <p class="notice alert-info"><%= notice %></p>
+      <% if flash[:alert] %>
+        <p class="alert alert-warning"><%= alert %></p>
+      <% end %>
       <%= yield %>
     </div>
   </body>
